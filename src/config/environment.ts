@@ -12,7 +12,7 @@ const bankDbConfig: interfaces.DatabaseConfig = {
 
 export const environment = {
   node_env: (process.env.NODE_ENV as ENVIRONMENTS) || ENVIRONMENTS.DEVELOPMENT,
-  ip: process.env.NODE_ENV || '0.0.0.0',
+  ip: process.env.IP || '0.0.0.0',
   port: Number(process.env.PORT || 3001),
   database: {
     bank: bankDbConfig
